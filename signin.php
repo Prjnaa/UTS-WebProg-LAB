@@ -12,10 +12,12 @@
         <div>
             <form action="process/signin_process.php" method="post">
                 <div class="user-box">
+                <a>-</a>
                     <input type="text" name="username" required autocomplete="off">
                     <label for="username">Username</label>
                 </div>
                 <div class="user-box">
+                <a>-</a>
                     <input type="password" name="pass" required>
                     <label for="password">Password</label>
                 </div>
