@@ -10,9 +10,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
 <body>
-    <div class="container">
-        <h2 class="text-center">Sign Up</h2>
-        <div class="">
+<div class="login-box">
+        <h2>Sign Up</h2>
+        <div>
             <form action="process/signup_process.php" method="post">
                 <div class="form-group">
                     <label for="username">Username</label>
