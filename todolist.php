@@ -32,15 +32,16 @@ $tasks = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <style>
     body {
     font-family: sans-serif;
-    background-image: url(images/gradient3.jpeg);
-    .table {
-    background-color: rgba(255, 255, 255, 0.7); /* Ubah nilai alpha sesuai keinginan Anda */
+    background-image: url(images/gradient3.jpeg); 
   }
-
+  .table {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
   .table tbody tr td {
-    background-color: transparent; /* Hapus warna latar belakang kotak sel */
+    background-color: transparent; 
   }
-  }</style>
+  
+  </style>
     <title>To Do List</title>
 </head>
 
