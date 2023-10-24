@@ -23,6 +23,6 @@ if (!$data_row) {
     else {
         $_SESSION['user_id'] = $data_row['id'];
         $_SESSION['user_name'] = $data_row['username'];
-        header('Location: ../index.php');
+        header('Location: ../todolist.php');
     }
 }

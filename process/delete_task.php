@@ -11,5 +11,5 @@ $sql = "DELETE FROM task_list
 $stmt = $db->prepare($sql);
 $stmt->execute([$del_id]);
 
-header('Location: ../index.php');
+header('Location: ../todolist.php');
 exit();

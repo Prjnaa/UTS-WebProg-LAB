@@ -19,5 +19,5 @@ $task_id = $_POST['id'];
 $stmt = $db->prepare($sql);
 $stmt->execute([$task_id]);
 
-header('Location: ../index.php');
+header('Location: ../todolist.php');
 exit();
