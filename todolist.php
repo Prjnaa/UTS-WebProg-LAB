@@ -29,7 +29,7 @@ $tasks = $stmt->fetchAll(PDO::FETCH_ASSOC);
         body {
             font-family: sans-serif;
             background-image: url(images/gradient3.jpeg);
-
+        }
             .table {
                 background-color: rgba(255, 255, 255, 0.7);
                 /* Ubah nilai alpha sesuai keinginan Anda */
@@ -39,7 +39,7 @@ $tasks = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 background-color: transparent;
                 /* Hapus warna latar belakang kotak sel */
             }
-        }
+        
     </style>
     <title>To Do List</title>
 </head>
