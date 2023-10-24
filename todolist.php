@@ -9,15 +9,10 @@ $fetch_sql = "SELECT *
 
 $stmt = $db->prepare($fetch_sql);
 $user_id = $_SESSION['user_id'];
-
 $stmt->bindParam(':user_id', $user_id, PDO::PARAM_INT);
-
 $stmt->execute();
-
 $tasks = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
