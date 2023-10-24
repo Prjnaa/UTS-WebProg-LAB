@@ -55,14 +55,18 @@ $tasks = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         <section class="my-5">
             <h1 class="mb-3 text-center">To Do List</h1>
-            <a href="input.php" class="btn btn-primary">Add Task</a>
-
-            <div class="table-responsive my-4">
+            <form action="process/add_task.php" method="post">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" name="new_task" placeholder="Add new task">
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
                 <table id="task-table" class="table table-bordered table-hover">
                     <thead>
                         <tr>
                             <th>Priority</th>
                             <th>Task</th>
+                            <th>Task Description</th>
                             <th>Done</th>
                             <th>Progress</th>
                             <th></th>
@@ -85,6 +89,17 @@ $tasks = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                         </p>
                                     <?php } ?>
                                 </td>
+                                <td>
+                                    <?php if ($row['status'] == 'Done') { ?>
+                                        <p style="text-decoration: line-through;">
+                                        <?= $row['task_desc'] ?>
+                                        </p>
+                                    <?php } else { ?>
+                                        <p>
+                                        <?= $row['task_desc'] ?>
+                                        </p>
+                                    <?php } ?>
+                                    </td>
                                 <td>
                                     <form action="process/done_task.php" method="post" class="d-flex">
                                         <?php if ($row['status'] == "Done") { ?>
