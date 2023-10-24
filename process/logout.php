@@ -7,5 +7,5 @@ function function_alert($message) {
 
 function_alert("Anda telah logout");
 
-header('Location: ../signin.php');
+header('Location: ../index.php');
 exit();
